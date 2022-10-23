@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="scripts.js"></script>
+
+    <title>Sistemas de notas escolares</title>
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBlrYQDrEqdhu0PxDJAxu06MK00PTVmAKkQA&usqp=CAU">
+    <link rel="stylesheet" href="style.css">
+    <h1> Avaliação de Notas </h1>
+    <img
+        src="https://play-lh.googleusercontent.com/tjMvQsqw_ZUa5fRVExtpqPrhQEEEZ_PeJYTa2L3Qvx5lk1Bx4474DcCQtIzBBJdIi-Y">
+</head>
+
+<body>
+    <form>
+        <label for="mensage">Coloque sua nota no espaço abaixo:</label>
+        <br></br>
+        
+        <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" id="meuInput"/>
+        <button onclick="funcaoDoClick()" id="btnSubmit"> Click-Me </button>
+
+    </form>
+
+    <table>
+        <thead>
+            <th> Nota A </th>
+            <th> Nota B </th>
+            <th> Nota C </th>
+            <th> Nota D </th>
+            <th> Nota F </th>
+        </thead>
+        <tr>
+            <td> Pontuação de 90 para cima. </td>
+            <td> Média entre 80 á 89 pontos. </td>
+            <td> Média entre 70 á 79 pontos. </td>
+            <td> Média entre 60 á 69 pontos. </td>
+            <td> Pontuação menor que 60. </td>
+        </tr>
+    </table>
+
+</body>
+
+
+
+</html>
